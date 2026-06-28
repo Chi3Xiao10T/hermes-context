@@ -1,0 +1,14 @@
+model_provider = "custom"
+model = "gpt-5.5"
+
+[model_providers.custom]
+name = "custom"
+wire_api = "responses"
+requires_openai_auth = true
+base_url = "https://api.lingshuai.cc"
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
